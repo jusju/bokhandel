@@ -14,7 +14,8 @@ import com.example.kaverilista.model.Friend;
 public class FriendController {
 
 	private List<Friend> friendList = new ArrayList<Friend>();
-	
+	private String password;
+
 	@GetMapping("/home")
 	public String friendForm(Model model) {
 		model.addAttribute("friend", new Friend());
